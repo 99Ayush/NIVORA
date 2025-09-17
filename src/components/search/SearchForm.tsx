@@ -47,7 +47,7 @@ export default function SearchForm() {
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto shadow-xl">
+    <Card className="w-full max-w-sm mx-auto shadow-xl">
       <CardHeader>
         <CardTitle className="text-center text-2xl font-headline">Find Your Perfect Stay</CardTitle>
       </CardHeader>

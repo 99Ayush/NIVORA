@@ -8,11 +8,11 @@ export default function Home() {
       <Header />
       <main className="flex-1 container mx-auto p-4 md:p-6">
         <div className="text-center w-full pt-16 md:pt-24">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">
-            Find Your Home Away From Home
+          <h1 className="text-6xl md:text-8xl font-bold font-headline mb-4">
+            Nivora
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Discover the best PGs, messes, and flats near your college with AI-powered insights.
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Find Your Home Away From Home. Discover the best PGs, messes, and flats near your college with AI-powered insights.
           </p>
           <SearchForm />
         </div>
