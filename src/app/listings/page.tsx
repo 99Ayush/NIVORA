@@ -2,7 +2,6 @@ import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import AiSummary from '@/components/listings/AiSummary';
 import ListingCard from '@/components/listings/ListingCard';
 import ListingsMap from '@/components/listings/ListingsMap';
 import { listings } from '@/lib/data';
@@ -65,10 +64,6 @@ export default function ListingsPage({ searchParams }: ListingsPageProps) {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <Suspense fallback={<Skeleton className="h-40 w-full mb-8" />}>
-              <AiSummary collegeName={collegeName} pincode={pincode} />
-            </Suspense>
-
             <h2 className="text-2xl font-semibold font-headline mb-4">
               Available Listings
             </h2>
