@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 flex items-center justify-center p-4">
-        <div className="text-center w-full">
+      <main className="flex-1 container mx-auto p-4 md:p-6">
+        <div className="text-center w-full pt-16 md:pt-24">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">
             Find Your Home Away From Home
           </h1>
