@@ -14,9 +14,9 @@
     },
     {
       "id": "pg-image-3",
-      "description": "Clean and simple PG room with essential furniture.",
-      "imageUrl": "https://picsum.photos/seed/pg3/600/400",
-      "imageHint": "hostel room"
+      "description": "A neat single room with a wooden bed and wardrobe.",
+      "imageUrl": "https://picsum.photos/seed/amanpg/823/628",
+      "imageHint": "wooden furniture"
     },
     {
       "id": "flat-image-1",
@@ -57,7 +57,7 @@
     {
       "id": "pg-image-6",
       "description": "Neat and tidy PG room with a window view.",
-      "imageUrl": "https://picsum.photo/seed/pg6/600/400",
+      "imageUrl": "https://picsum.photos/seed/pg6/600/400",
       "imageHint": "hostel room"
     },
     {
@@ -71,6 +71,48 @@
       "description": "A map showing locations of listings",
       "imageUrl": "https://picsum.photos/seed/map/800/600",
       "imageHint": "city map"
+    },
+    {
+      "id": "unique-flat-1",
+      "description": "A unique, well-lit flat for students.",
+      "imageUrl": "https://picsum.photos/seed/uflat1/600/400",
+      "imageHint": "modern apartment"
+    },
+    {
+      "id": "unique-hostel-1",
+      "description": "A unique, modern hostel building.",
+      "imageUrl": "https://picsum.photos/seed/uhostel1/600/400",
+      "imageHint": "modern building"
+    },
+    {
+      "id": "unique-pg-1",
+      "description": "A unique, clean PG room for students.",
+      "imageUrl": "https://picsum.photos/seed/upg1/600/400",
+      "imageHint": "clean room"
+    },
+    {
+      "id": "unique-hostel-2",
+      "description": "Another unique hostel room.",
+      "imageUrl": "https://picsum.photos/seed/uhostel2/600/400",
+      "imageHint": "hostel room"
+    },
+    {
+      "id": "unique-flat-2",
+      "description": "Another unique flat interior.",
+      "imageUrl": "https://picsum.photos/seed/uflat2/600/400",
+      "imageHint": "living room"
+    },
+    {
+      "id": "unique-pg-2",
+      "description": "Another unique PG room with a desk.",
+      "imageUrl": "https://picsum.photos/seed/upg2/600/400",
+      "imageHint": "desk space"
+    },
+    {
+      "id": "unique-hostel-3",
+      "description": "A third unique hostel space.",
+      "imageUrl": "https://picsum.photos/seed/uhostel3/600/400",
+      "imageHint": "student hostel"
     }
   ]
 }
