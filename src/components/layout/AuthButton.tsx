@@ -70,7 +70,7 @@ export default function AuthButton() {
 
   return (
     <Link href="/login">
-      <Button variant="outline">Login</Button>
+      <Button variant="ghost">Login</Button>
     </Link>
   );
 }

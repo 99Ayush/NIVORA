@@ -22,7 +22,7 @@ export default function HelpButton() {
   };
 
   return (
-    <Button variant="outline" onClick={openChatbot}>
+    <Button variant="ghost" onClick={openChatbot}>
       <MessageSquare className="mr-2 h-4 w-4" />
       Help
     </Button>
