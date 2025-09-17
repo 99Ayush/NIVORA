@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "listing-1",
+      "description": "Exterior of a modern PG building",
+      "imageUrl": "https://picsum.photos/seed/1/600/400",
+      "imageHint": "hostel exterior"
+    },
+    {
+      "id": "listing-2",
+      "description": "Cozy living room in a shared flat",
+      "imageUrl": "https://picsum.photos/seed/2/600/400",
+      "imageHint": "apartment living room"
+    },
+    {
+      "id": "listing-3",
+      "description": "Dining hall of a student mess",
+      "imageUrl": "https://picsum.photos/seed/3/600/400",
+      "imageHint": "student cafeteria"
+    },
+    {
+      "id": "listing-4",
+      "description": "A quiet study room in a PG",
+      "imageUrl": "https://picsum.photos/seed/4/600/400",
+      "imageHint": "student room"
+    },
+    {
+      "id": "listing-5",
+      "description": "A plate of nutritious food from a mess",
+      "imageUrl": "https://picsum.photos/seed/5/600/400",
+      "imageHint": "healthy food"
+    },
+    {
+      "id": "listing-6",
+      "description": "Modern co-living space with people",
+      "imageUrl": "https://picsum.photos/seed/6/600/400",
+      "imageHint": "modern apartment"
+    },
+    {
+      "id": "map",
+      "description": "A map showing locations of listings",
+      "imageUrl": "https://picsum.photos/seed/map/800/600",
+      "imageHint": "city map"
+    }
+  ]
 }
