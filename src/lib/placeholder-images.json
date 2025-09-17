@@ -67,6 +67,24 @@
       "imageHint": "apartment building"
     },
     {
+      "id": "flat-image-1",
+      "description": "Exterior of a modern 1BHK flat",
+      "imageUrl": "https://picsum.photos/seed/flat1/600/400",
+      "imageHint": "apartment exterior"
+    },
+    {
+      "id": "flat-image-2",
+      "description": "Modern 2BHK apartment building in a city",
+      "imageUrl": "https://picsum.photos/seed/flat2/600/400",
+      "imageHint": "apartment building"
+    },
+    {
+      "id": "pg-image-6",
+      "description": "Exterior of a PG building in Noida",
+      "imageUrl": "https://picsum.photos/seed/pg6/600/400",
+      "imageHint": "modern building"
+    },
+    {
       "id": "map",
       "description": "A map showing locations of listings",
       "imageUrl": "https://picsum.photos/seed/map/800/600",

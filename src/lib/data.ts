@@ -43,7 +43,7 @@ export const listings: Listing[] = [
     name: '1 BHK Flat',
     type: 'Flat',
     address: '400m from college',
-    imageId: 'listing-4',
+    imageId: 'flat-image-1',
     college: 'BPIT',
     pincode: '110017',
     reviews: [
@@ -107,7 +107,7 @@ export const listings: Listing[] = [
     name: '2 BHK Flat',
     type: 'Flat',
     address: '800m from college',
-    imageId: 'listing-3',
+    imageId: 'flat-image-2',
     college: 'VIPS',
     pincode: '110034',
     reviews: [
@@ -121,7 +121,7 @@ export const listings: Listing[] = [
     name: 'Sushant pg',
     type: 'PG',
     address: '800m from college',
-    imageId: 'listing-4',
+    imageId: 'pg-image-6',
     college: 'Delhi Technical Campus',
     pincode: '201301',
     reviews: [
