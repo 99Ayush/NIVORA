@@ -1,5 +1,6 @@
 import type { Listing } from "@/lib/types";
 import Image from "next/image";
+import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
   Card,
@@ -51,14 +52,15 @@ export default function ListingCard({ listing }: ListingCardProps) {
         <CardDescription>{listing.address}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        {/* Placeholder for rating or other info */}
         <p className="text-sm text-muted-foreground">Reviews available.</p>
       </CardContent>
       <CardFooter>
-        <Button variant="outline" className="w-full">
-          <MessageCircle className="mr-2 h-4 w-4" />
-          View Reviews & Details
-        </Button>
+        <Link href={`/listings/${listing.id}`} className="w-full">
+          <Button variant="outline" className="w-full">
+            <MessageCircle className="mr-2 h-4 w-4" />
+            View Reviews & Details
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );
