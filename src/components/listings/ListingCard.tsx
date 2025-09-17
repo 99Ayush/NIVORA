@@ -17,6 +17,14 @@ interface ListingCardProps {
   listing: Listing;
 }
 
+const badgeVariantMap: { [key in Listing['type']]: 'default' | 'secondary' | 'outline' | 'destructive' } = {
+  PG: 'default',
+  Flat: 'secondary',
+  Mess: 'outline',
+  Hostel: 'destructive',
+};
+
+
 export default function ListingCard({ listing }: ListingCardProps) {
   const image = PlaceHolderImages.find((img) => img.id === listing.imageId);
 
@@ -36,7 +44,7 @@ export default function ListingCard({ listing }: ListingCardProps) {
       <CardHeader>
         <div className="flex justify-between items-start">
           <CardTitle className="font-headline">{listing.name}</CardTitle>
-          <Badge variant={listing.type === 'PG' ? 'default' : listing.type === 'Flat' ? 'secondary' : 'outline'}>
+          <Badge variant={badgeVariantMap[listing.type] || 'default'}>
             {listing.type}
           </Badge>
         </div>

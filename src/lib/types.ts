@@ -1,7 +1,7 @@
 export type Listing = {
   id: string;
   name: string;
-  type: 'PG' | 'Mess' | 'Flat';
+  type: 'PG' | 'Mess' | 'Flat' | 'Hostel';
   address: string;
   imageId: string;
   college: string;
