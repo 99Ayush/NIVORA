@@ -55,7 +55,7 @@ export const listings: Listing[] = [
     name: 'Nalanda stays',
     type: 'Hostel',
     address: '500m away from college',
-    imageId: 'listing-5',
+    imageId: 'hostel-image-1',
     college: 'BPIT',
     pincode: '110017',
     reviews: [
@@ -81,7 +81,7 @@ export const listings: Listing[] = [
     name: 'Vikram homes',
     type: 'Hostel',
     address: '1.5km from college',
-    imageId: 'listing-1',
+    imageId: 'hostel-image-2',
     college: 'ADGITM',
     pincode: '110092',
     reviews: [
@@ -133,7 +133,7 @@ export const listings: Listing[] = [
     name: 'Sunrise hostel Noida',
     type: 'Hostel',
     address: '1km away from college',
-    imageId: 'listing-5',
+    imageId: 'hostel-image-3',
     college: 'Delhi Technical Campus',
     pincode: '201301',
     reviews: [

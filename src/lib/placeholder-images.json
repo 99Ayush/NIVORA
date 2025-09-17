@@ -1,88 +1,70 @@
 {
   "placeholderImages": [
     {
-      "id": "listing-1",
-      "description": "Modern PG exterior with balconies",
-      "imageUrl": "https://picsum.photos/seed/101/600/400",
-      "imageHint": "student housing"
-    },
-    {
-      "id": "listing-2",
-      "description": "A clean, shared PG room with bunk beds",
-      "imageUrl": "https://picsum.photos/seed/102/600/400",
-      "imageHint": "dorm room"
-    },
-    {
-      "id": "listing-3",
-      "description": "Student common area in a PG",
-      "imageUrl": "https://picsum.photos/seed/103/600/400",
-      "imageHint": "common room"
-    },
-    {
-      "id": "listing-4",
-      "description": "A quiet study desk in a PG room",
-      "imageUrl": "https://picsum.photos/seed/104/600/400",
-      "imageHint": "student desk"
-    },
-    {
-      "id": "listing-5",
-      "description": "Well-organized PG room with storage",
-      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "id": "pg-image-1",
+      "description": "A well-lit PG room with two beds and desks.",
+      "imageUrl": "https://picsum.photos/seed/pg1/600/400",
       "imageHint": "student room"
     },
     {
-      "id": "listing-6",
-      "description": "Bright and airy PG living space",
-      "imageUrl": "https://picsum.photos/seed/106/600/400",
-      "imageHint": "hostel room"
-    },
-    {
-      "id": "pg-image-1",
-      "description": "Comfortable student room in a modern PG",
-      "imageUrl": "https://picsum.photos/seed/107/600/400",
-      "imageHint": "student accommodation"
-    },
-    {
       "id": "pg-image-2",
-      "description": "Well-lit twin sharing PG room with desks",
-      "imageUrl": "https://picsum.photos/seed/108/600/400",
+      "description": "Shared student PG room with multiple beds and study areas.",
+      "imageUrl": "https://picsum.photos/seed/pg2/600/400",
       "imageHint": "dorm room"
     },
     {
       "id": "pg-image-3",
-      "description": "Simple and clean PG accommodation",
-      "imageUrl": "https://picsum.photos/seed/109/600/400",
+      "description": "Clean and simple PG room with essential furniture.",
+      "imageUrl": "https://picsum.photos/seed/pg3/600/400",
       "imageHint": "hostel room"
     },
     {
-      "id": "pg-image-4",
-      "description": "Shared student PG room with window",
-      "imageUrl": "https://picsum.photos/seed/110/600/400",
+      "id": "flat-image-1",
+      "description": "A cozy 1BHK student flat with a small kitchen.",
+      "imageUrl": "https://picsum.photos/seed/flat1/600/400",
+      "imageHint": "small apartment"
+    },
+    {
+      "id": "hostel-image-1",
+      "description": "Hostel building exterior with a modern design.",
+      "imageUrl": "https://picsum.photos/seed/hostel1/600/400",
       "imageHint": "student housing"
     },
     {
-      "id": "pg-image-5",
-      "description": "Exterior of a residential PG building with greenery",
-      "imageUrl": "https://picsum.photos/seed/111/600/400",
-      "imageHint": "apartment building"
+      "id": "pg-image-4",
+      "description": "Spacious PG room for students with simple decor.",
+      "imageUrl": "https://picsum.photos/seed/pg4/600/400",
+      "imageHint": "student accommodation"
     },
     {
-      "id": "flat-image-1",
-      "description": "A single occupancy room in a student PG",
-      "imageUrl": "https://picsum.photos/seed/112/600/400",
+      "id": "hostel-image-2",
+      "description": "A comfortable room in a student hostel.",
+      "imageUrl": "https://picsum.photos/seed/hostel2/600/400",
+      "imageHint": "dorm room"
+    },
+    {
+      "id": "pg-image-5",
+      "description": "Modern PG room with bunk beds and workstations.",
+      "imageUrl": "https://picsum.photos/seed/pg5/600/400",
       "imageHint": "student room"
     },
     {
       "id": "flat-image-2",
-      "description": "Shared PG room for students",
-      "imageUrl": "https://picsum.photos/seed/113/600/400",
-      "imageHint": "hostel room"
+      "description": "Living area of a 2BHK flat for students.",
+      "imageUrl": "https://picsum.photos/seed/flat2/600/400",
+      "imageHint": "apartment interior"
     },
     {
       "id": "pg-image-6",
-      "description": "Exterior view of a multi-story PG building",
-      "imageUrl": "https://picsum.photos/seed/114/600/400",
-      "imageHint": "modern building"
+      "description": "Neat and tidy PG room with a window view.",
+      "imageUrl": "https://picsum.photo/seed/pg6/600/400",
+      "imageHint": "hostel room"
+    },
+    {
+      "id": "hostel-image-3",
+      "description": "Bright common area in a student hostel.",
+      "imageUrl": "https://picsum.photos/seed/hostel3/600/400",
+      "imageHint": "common room"
     },
     {
       "id": "map",
