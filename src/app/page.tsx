@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="text-9xl md:text-[10rem] font-bold font-headline leading-none mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
             Nivora
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto italic">
             Find Your Home Away From Home. Discover the best PGs, messes, and flats near your college with AI-powered insights.
           </p>
         </section>
