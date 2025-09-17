@@ -9,10 +9,10 @@ export default function Home() {
       <main className="flex-1 flex items-center justify-center p-4">
         <div className="text-center w-full">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">
-            Nivora
+            Find Your Home Away From Home
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Your home away from home. Discover the best PGs, messes, and flats near your college with AI-powered insights.
+            Discover the best PGs, messes, and flats near your college with AI-powered insights.
           </p>
           <SearchForm />
         </div>
