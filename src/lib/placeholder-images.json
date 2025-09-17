@@ -37,6 +37,36 @@
       "imageHint": "modern apartment"
     },
     {
+      "id": "pg-image-1",
+      "description": "Comfortable student room in a PG",
+      "imageUrl": "https://picsum.photos/seed/pg1/600/400",
+      "imageHint": "student room"
+    },
+    {
+      "id": "pg-image-2",
+      "description": "Well-lit twin sharing PG room",
+      "imageUrl": "https://picsum.photos/seed/pg2/600/400",
+      "imageHint": "dorm room"
+    },
+    {
+      "id": "pg-image-3",
+      "description": "Clean and simple PG accommodation",
+      "imageUrl": "https://picsum.photos/seed/pg3/600/400",
+      "imageHint": "hostel room"
+    },
+    {
+      "id": "pg-image-4",
+      "description": "Shared room in a student PG",
+      "imageUrl": "https://picsum.photos/seed/pg4/600/400",
+      "imageHint": "student accommodation"
+    },
+    {
+      "id": "pg-image-5",
+      "description": "Exterior of a residential PG building",
+      "imageUrl": "https://picsum.photos/seed/pg5/600/400",
+      "imageHint": "apartment building"
+    },
+    {
       "id": "map",
       "description": "A map showing locations of listings",
       "imageUrl": "https://picsum.photos/seed/map/800/600",

@@ -7,7 +7,7 @@ export const listings: Listing[] = [
     name: 'Rajput residency',
     type: 'PG',
     address: '500m from college',
-    imageId: 'listing-1',
+    imageId: 'pg-image-1',
     college: 'BPIT',
     pincode: '110017',
     reviews: [
@@ -19,7 +19,7 @@ export const listings: Listing[] = [
     name: 'Bhai friend pg',
     type: 'PG',
     address: 'Near BPIT',
-    imageId: 'listing-2',
+    imageId: 'pg-image-2',
     college: 'BPIT',
     pincode: '110017',
     reviews: [
@@ -31,7 +31,7 @@ export const listings: Listing[] = [
     name: 'AMAN PG',
     type: 'PG',
     address: 'Near BPIT',
-    imageId: 'listing-3',
+    imageId: 'pg-image-3',
     college: 'BPIT',
     pincode: '110017',
     reviews: [
@@ -69,7 +69,7 @@ export const listings: Listing[] = [
     name: 'Ganga pg',
     type: 'PG',
     address: '600m from college',
-    imageId: 'listing-6',
+    imageId: 'pg-image-4',
     college: 'ADGITM',
     pincode: '110092',
     reviews: [
@@ -95,7 +95,7 @@ export const listings: Listing[] = [
     name: 'Mahesh pg',
     type: 'PG',
     address: '300m from college',
-    imageId: 'listing-2',
+    imageId: 'pg-image-5',
     college: 'VIPS',
     pincode: '110034',
     reviews: [
