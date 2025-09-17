@@ -2,6 +2,7 @@ import { Home } from 'lucide-react';
 import Link from 'next/link';
 import HelpButton from './HelpButton';
 import AuthButton from './AuthButton';
+import { Button } from '@/components/ui/button';
 
 export default function Header() {
   return (
@@ -12,6 +13,9 @@ export default function Header() {
           <span className="text-xl font-bold text-primary">Nivora</span>
         </Link>
         <div className="flex items-center gap-2">
+          <Link href="/contact">
+            <Button variant="ghost">Contact Us</Button>
+          </Link>
           <HelpButton />
           <AuthButton />
         </div>
