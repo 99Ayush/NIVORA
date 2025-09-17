@@ -9,7 +9,7 @@ export const listings: Listing[] = [
     address: '500m from college',
     imageId: 'listing-1',
     college: 'BPIT',
-    pincode: '110085',
+    pincode: '110017',
     reviews: [
       { id: 'r1', author: 'Anonymous', rating: 4, comment: 'Room for two, AC, Almira, Bed, Fridge, washing machine (common), Table chair, Wifi. Rent -6500 pm (electricity 8rs unit)' },
     ],
@@ -21,7 +21,7 @@ export const listings: Listing[] = [
     address: 'Near BPIT',
     imageId: 'listing-2',
     college: 'BPIT',
-    pincode: '110085',
+    pincode: '110017',
     reviews: [
       { id: 'r2', author: 'Anonymous', rating: 4, comment: 'AC Room for 6, Separate Almira, Bed separate, Table and chair, 2 Common washroom. Rent : 6000 p/m(electricity 10rs/unit )' },
     ],
@@ -33,7 +33,7 @@ export const listings: Listing[] = [
     address: 'Near BPIT',
     imageId: 'listing-3',
     college: 'BPIT',
-    pincode: '110085',
+    pincode: '110017',
     reviews: [
         { id: 'r3', author: 'Anonymous', rating: 4, comment: 'Room of two, Wifi, Air conditioner, Bed, Almira, Table chair, Fridge (common), Washing machine (common). Rent – 5500 P/M (electricity – 15rs unit)' },
     ],
@@ -45,7 +45,7 @@ export const listings: Listing[] = [
     address: '400m from college',
     imageId: 'listing-4',
     college: 'BPIT',
-    pincode: '110085',
+    pincode: '110017',
     reviews: [
         { id: 'r4', author: 'Anonymous', rating: 4, comment: '1 BHK flat, Fully furnished with bed and kitchen, Attached washroom, Air conditioner, Geyser, Water supply 24/7, Single table chair set. Rent: 12000 p/m (electricity 8rs per unit) (member allowance 1 only), Security deposit: 2month rent' },
     ],
@@ -57,7 +57,7 @@ export const listings: Listing[] = [
     address: '500m away from college',
     imageId: 'listing-5',
     college: 'BPIT',
-    pincode: '110085',
+    pincode: '110017',
     reviews: [
         { id: 'r5', author: 'Anonymous', rating: 4, comment: 'Room for 4, 4 beds in room with ac, Almira separate, Washing machine common for 15, Table chair separate, Wifi, Mess included. Rent :1.55L/yr' },
     ],
