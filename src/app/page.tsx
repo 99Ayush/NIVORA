@@ -1,13 +1,14 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SearchForm from "@/components/search/SearchForm";
+import Faq from "@/components/home/Faq";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1 container mx-auto p-4 md:p-6">
-        <div className="text-center w-full pt-16 md:pt-24">
+        <div className="text-center w-full pt-16 md:pt-24 pb-16 md:pb-24">
           <h1 className="text-6xl md:text-8xl font-bold font-headline mb-4">
             Nivora
           </h1>
@@ -16,6 +17,9 @@ export default function Home() {
           </p>
           <SearchForm />
         </div>
+        
+        <Faq />
+
       </main>
       <Footer />
     </div>
