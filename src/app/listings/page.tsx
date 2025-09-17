@@ -41,11 +41,16 @@ export default function ListingsPage({ searchParams }: ListingsPageProps) {
   const collegeName = searchParams.college || 'your college';
   const pincode = searchParams.pincode || 'your area';
 
-  const filteredListings = listings.filter(
-    (listing) =>
-      listing.pincode === searchParams.pincode ||
-      listing.college === searchParams.college
-  );
+  const filteredListings = listings.filter((listing) => {
+    const collegeQuery = searchParams.college?.toLowerCase();
+    const pincodeQuery = searchParams.pincode;
+
+    if (!collegeQuery || !pincodeQuery) return false;
+
+    const listingCollege = listing.college.toLowerCase();
+
+    return listingCollege.includes(collegeQuery) && listing.pincode === pincodeQuery;
+  });
 
   return (
     <div className="flex flex-col min-h-screen">
