@@ -53,7 +53,7 @@ const teamMembers = [
     },
   },
   {
-    name: 'Aman Chinnar',
+    name: 'Aman',
     role: 'Content Specialist',
     avatarUrl: 'https://i.ibb.co/BVC1YQzq/Whats-App-Image-2025-09-18-at-21-14-08-b73b2ec6.jpg',
     avatarFallback: 'AC',
@@ -83,6 +83,7 @@ export default function TeamPage() {
                       className={cn({
                         'scale-150': member.name === 'Avneet Singh',
                         'scale-150 -translate-y-2': member.name === 'Anirudh Kanwat',
+                        'scale-[2] -translate-y-4': member.name === 'Aman',
                       })}
                     />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
