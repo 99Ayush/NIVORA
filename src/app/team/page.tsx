@@ -83,7 +83,6 @@ export default function TeamPage() {
                       className={cn({
                         'scale-150': member.name === 'Avneet Singh',
                         'scale-150 -translate-y-2': member.name === 'Anirudh Kanwat',
-                        'scale-[1.8] -translate-y-8': member.name === 'Aman',
                       })}
                     />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
