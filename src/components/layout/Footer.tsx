@@ -1,5 +1,6 @@
-import { Home, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import Link from "next/link";
+import NivoraLogo from "./NivoraLogo";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-               <Home className="h-8 w-8" />
+               <NivoraLogo className="h-8 w-8 text-primary-foreground" />
                <span className="text-2xl font-bold">Nivora</span>
             </div>
             <p className="text-sm text-primary-foreground/80 max-w-md">
