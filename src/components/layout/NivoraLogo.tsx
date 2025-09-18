@@ -10,14 +10,14 @@ export default function NivoraLogo(props: SVGProps<SVGSVGElement>) {
       {...props}
     >
       <path
-        fill="#50207A"
+        fill="hsl(var(--primary))"
         d="M20 50 L50 20 L80 50 L80 80 L20 80 Z"
         stroke="hsl(var(--background))"
         strokeWidth="4"
         strokeLinejoin="round"
       />
       <path
-        fill="#F5A623"
+        fill="hsl(var(--accent))"
         d="M20 50 L50 20 L50 80 L20 80 Z"
         stroke="hsl(var(--background))"
         strokeWidth="4"
