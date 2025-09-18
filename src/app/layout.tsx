@@ -3,7 +3,6 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Script from 'next/script';
 import StarlightBackground from '@/components/layout/StarlightBackground';
-import FireworksBackground from '@/components/layout/FireworksBackground';
 
 export const metadata: Metadata = {
   title: 'Nivora : Home away from Home',
@@ -25,7 +24,6 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased relative">
         <StarlightBackground />
-        <FireworksBackground />
         <div className="relative z-10">
           {children}
         </div>
