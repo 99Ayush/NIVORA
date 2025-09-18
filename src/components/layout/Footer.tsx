@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground mt-auto">
       <div className="container mx-auto py-12 px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div>
             <div className="flex items-center gap-2 mb-4">
                <Home className="h-8 w-8" />
                <span className="text-2xl font-bold">Nivora</span>
@@ -15,8 +15,8 @@ export default function Footer() {
               Your one-stop solution to finding the best PGs, messes, and flats near your college. We provide AI-powered insights and genuine reviews to help you find your home away from home.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:col-span-2 gap-8">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:col-span-1 lg:col-span-2 gap-8">
+            <div className="sm:col-span-1">
               <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Useful Links</h3>
               <ul className="space-y-2">
                 <li>
@@ -36,7 +36,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="sm:col-span-1">
               <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Other Links</h3>
               <ul className="space-y-2">
                 <li>
@@ -51,14 +51,14 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Contact</h3>
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5" />
-              <a href="mailto:contact@nivora.com" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                contact@nivora.com
-              </a>
+            <div className="sm:col-span-1">
+              <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Contact</h3>
+              <div className="flex items-center gap-3">
+                <Mail className="h-5 w-5" />
+                <a href="mailto:contact@nivora.com" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  contact@nivora.com
+                </a>
+              </div>
             </div>
           </div>
         </div>
