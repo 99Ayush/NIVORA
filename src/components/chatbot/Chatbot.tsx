@@ -45,7 +45,7 @@ export default function Chatbot() {
         <Button
           variant="default"
           size="icon"
-          className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-accent text-accent-foreground hover:bg-accent/90"
+          className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-200 ease-in-out hover:scale-110"
           aria-label="Open chatbot"
         >
           <MessageSquare className="h-7 w-7" />
