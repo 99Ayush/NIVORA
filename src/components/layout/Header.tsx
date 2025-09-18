@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AuthButton from './AuthButton';
 import { Button } from '@/components/ui/button';
 import NivoraLogo from './NivoraLogo';
-import { MessageSquare } from 'lucide-react';
+import HelpDialog from './HelpDialog';
 
 export default function Header() {
   return (
@@ -19,10 +19,7 @@ export default function Header() {
           <Link href="/contact">
             <Button variant="ghost">Contact Us</Button>
           </Link>
-          <Button variant="ghost" data-is-open-button='true' data-chatbot-id='cmf6zmt930024ddn3qbkai5f8'>
-            <MessageSquare className="mr-2 h-4 w-4" />
-            Help
-          </Button>
+          <HelpDialog />
           <AuthButton />
         </div>
       </div>
