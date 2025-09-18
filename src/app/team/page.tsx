@@ -54,7 +54,7 @@ const teamMembers = [
   {
     name: 'Aman',
     role: 'Content Specialist',
-    avatarUrl: 'https://drive.google.com/uc?export=view&id=1FeVw4Nwj6X6B5t24_Jd8DzLRr3idI-EU',
+    avatarUrl: 'https://picsum.photos/seed/aman/100/100',
     avatarFallback: 'A',
      socials: {
       linkedin: '#',
