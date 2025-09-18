@@ -113,7 +113,7 @@ export default function ListingDetailPage({ params }: ListingDetailPageProps) {
 
           {/* Existing Reviews Section */}
           <div>
-            <h2 className="text-3xl font-bold font-headline mb-6">Reviews</h2>
+            <h2 className="text-3xl font-bold font-headline mb-6">Verified Reviews</h2>
             <div className="space-y-6">
               {listing.reviews.map((review) => (
                 <Card key={review.id}>
