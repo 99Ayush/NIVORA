@@ -53,10 +53,10 @@ const teamMembers = [
     },
   },
   {
-    name: 'Aman',
+    name: 'Aman Chinnar',
     role: 'Content Specialist',
     avatarUrl: 'https://i.ibb.co/BVC1YQzq/Whats-App-Image-2025-09-18-at-21-14-08-b73b2ec6.jpg',
-    avatarFallback: 'A',
+    avatarFallback: 'AC',
      socials: {
       linkedin: '#',
       github: '#',
