@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       <main className="flex-1 container mx-auto p-4 md:p-6">
         <section className="text-center w-full py-20 md:py-32 flex flex-col justify-center items-center">
-          <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold font-headline leading-none mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
+          <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold font-headline leading-none mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text [text-shadow:0_0_15px_rgba(214,185,252,0.4)]">
             Nivora
           </h1>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto italic min-h-[48px] md:min-h-[56px]">
