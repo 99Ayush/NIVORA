@@ -51,8 +51,10 @@ export default function LoginProviderPage() {
           </CardHeader>
           <CardContent>
             <Button onClick={handleSignIn} className="w-full">
-              <GoogleIcon />
-              Sign in with Google
+              <div className="flex items-center justify-center">
+                <GoogleIcon />
+                <span className="ml-2">Sign in with Google</span>
+              </div>
             </Button>
           </CardContent>
         </Card>
