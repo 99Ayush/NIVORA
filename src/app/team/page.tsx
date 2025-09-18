@@ -81,9 +81,9 @@ export default function TeamPage() {
                       alt={member.name}
                       data-ai-hint="person portrait"
                       className={cn({
-                        'scale-150': ['Avneet Singh', 'Anirudh Kanwat'].includes(member.name),
-                        'scale-[1.8] -translate-y-4': member.name === 'Aman',
-                        '-translate-y-2': member.name === 'Anirudh Kanwat',
+                        'scale-150': member.name === 'Avneet Singh',
+                        'scale-150 -translate-y-2': member.name === 'Anirudh Kanwat',
+                        'scale-[1.8] -translate-y-8': member.name === 'Aman',
                       })}
                     />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
