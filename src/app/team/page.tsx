@@ -75,7 +75,12 @@ export default function TeamPage() {
               <Card key={member.name} className="text-center">
                 <CardHeader className="items-center">
                   <Avatar className="h-24 w-24 mb-4">
-                    <AvatarImage src={member.avatarUrl} alt={member.name} data-ai-hint="person portrait" />
+                    <AvatarImage
+                      src={member.avatarUrl}
+                      alt={member.name}
+                      data-ai-hint="person portrait"
+                      className={member.name === 'Avneet Singh' ? 'scale-150' : ''}
+                    />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
                   </Avatar>
                   <CardTitle className="text-xl">{member.name}</CardTitle>
