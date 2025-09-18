@@ -24,7 +24,7 @@ export default function StarlightBackground() {
       ref={ref}
       className="fixed inset-0 z-0 pointer-events-none"
       style={{
-        background: `radial-gradient(600px circle at var(--x) var(--y), hsla(var(--primary) / 0.15), transparent 40%)`
+        background: `radial-gradient(800px circle at var(--x) var(--y), hsla(var(--primary) / 0.25), transparent 40%)`
       }}
     />
   );
