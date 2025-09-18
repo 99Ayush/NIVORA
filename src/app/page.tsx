@@ -39,8 +39,8 @@ export default function Home() {
           <SearchForm />
         </section>
 
-        <AboutUs />
         <Faq />
+        <AboutUs />
 
       </main>
       <Footer />
