@@ -1,8 +1,15 @@
 import Link from 'next/link';
+import { Menu } from 'lucide-react';
 import AuthButton from './AuthButton';
 import { Button } from '@/components/ui/button';
 import NivoraLogo from './NivoraLogo';
 import HelpDialog from './HelpDialog';
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose
+} from "@/components/ui/sheet"
 
 export default function Header() {
   return (
@@ -12,7 +19,8 @@ export default function Header() {
           <NivoraLogo className="h-6 w-6" />
           <span className="text-xl font-bold text-primary">Nivora</span>
         </Link>
-        <div className="flex items-center gap-2">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-2">
            <Link href="/team">
             <Button variant="ghost">Our Team</Button>
           </Link>
@@ -21,6 +29,34 @@ export default function Header() {
           </Link>
           <HelpDialog />
           <AuthButton />
+        </div>
+        {/* Mobile Navigation */}
+        <div className="md:hidden flex items-center">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="flex flex-col gap-4 p-4">
+                 <Link href="/" passHref>
+                  <SheetClose asChild><Button variant="ghost" className="justify-start">Home</Button></SheetClose>
+                </Link>
+                <Link href="/team" passHref>
+                  <SheetClose asChild><Button variant="ghost" className="justify-start">Our Team</Button></SheetClose>
+                </Link>
+                <Link href="/contact" passHref>
+                  <SheetClose asChild><Button variant="ghost" className="justify-start">Contact Us</Button></SheetClose>
+                </Link>
+                <div className="mt-4 border-t pt-4">
+                  <HelpDialog />
+                  <AuthButton />
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
