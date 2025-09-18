@@ -12,40 +12,50 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: 'Prapti Gupta',
-    role: 'Co-Founder & CEO',
-    avatarUrl: 'https://picsum.photos/seed/prapti/100/100',
-    avatarFallback: 'PG',
+    name: 'Ayush Kumar',
+    role: 'Team Leader',
+    avatarUrl: 'https://picsum.photos/seed/ayush/100/100',
+    avatarFallback: 'AK',
     socials: {
       linkedin: '#',
       github: '#',
     },
   },
   {
-    name: 'Vanshika',
-    role: 'Co-Founder & CTO',
-    avatarUrl: 'https://picsum.photos/seed/vanshika/100/100',
-    avatarFallback: 'V',
+    name: 'Aanchal Chaudhary',
+    role: 'Tech Specialist',
+    avatarUrl: 'https://picsum.photos/seed/aanchal/100/100',
+    avatarFallback: 'AC',
      socials: {
       linkedin: '#',
       github: '#',
     },
   },
    {
-    name: 'Suhani',
-    role: 'Lead Designer',
-    avatarUrl: 'https://picsum.photos/seed/suhani/100/100',
-    avatarFallback: 'S',
+    name: 'Avneet Singh',
+    role: 'Tech Specialist',
+    avatarUrl: 'https://picsum.photos/seed/avneet/100/100',
+    avatarFallback: 'AS',
      socials: {
       linkedin: '#',
       github: '#',
     },
   },
    {
-    name: 'Garima',
-    role: 'Marketing Head',
-    avatarUrl: 'https://picsum.photos/seed/garima/100/100',
-    avatarFallback: 'G',
+    name: 'Anirudh Kanwat',
+    role: 'Integration Expert',
+    avatarUrl: 'https://picsum.photos/seed/anirudh/100/100',
+    avatarFallback: 'AK',
+     socials: {
+      linkedin: '#',
+      github: '#',
+    },
+  },
+  {
+    name: 'Aman',
+    role: 'Content Specialist',
+    avatarUrl: 'https://picsum.photos/seed/aman/100/100',
+    avatarFallback: 'A',
      socials: {
       linkedin: '#',
       github: '#',
@@ -69,7 +79,7 @@ export default function ContactPage() {
 
         <section className="py-12">
           <h2 className="text-3xl font-bold font-headline text-center mb-10">Meet Our Team</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {teamMembers.map((member) => (
               <Card key={member.name} className="text-center">
                 <CardHeader className="items-center">
