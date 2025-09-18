@@ -13,11 +13,21 @@ declare global {
 
 export default function HelpButton() {
   const openChatbot = () => {
-    const chatbot = document.querySelector('zapier-interfaces-chatbot-embed') as any;
-    if (chatbot && chatbot.open) {
+    // The Zapier chatbot component might not be immediately available.
+    // We can directly call the 'open' method on the element.
+    const chatbot = document.querySelector('zapier-interfaces-chatbot-embed') as (HTMLElement & { open?: () => void }) | null;
+    
+    if (chatbot && typeof chatbot.open === 'function') {
       chatbot.open();
     } else {
       console.error('Zapier chatbot not found or is missing the open() method.');
+      // As a fallback, you might want to try again after a short delay
+      setTimeout(() => {
+        const delayedChatbot = document.querySelector('zapier-interfaces-chatbot-embed') as (HTMLElement & { open?: () => void }) | null;
+        if (delayedChatbot && typeof delayedChatbot.open === 'function') {
+          delayedChatbot.open();
+        }
+      }, 500);
     }
   };
 
