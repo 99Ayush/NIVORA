@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: 'Aman',
     role: 'Content Specialist',
-    avatarUrl: 'https://picsum.photos/seed/aman-2/100/100',
+    avatarUrl: 'https://i.ibb.co/BVC1YQzq/Whats-App-Image-2025-09-18-at-21-14-08-b73b2ec6.jpg',
     avatarFallback: 'A',
      socials: {
       linkedin: '#',
@@ -81,7 +81,7 @@ export default function TeamPage() {
                       alt={member.name}
                       data-ai-hint="person portrait"
                       className={cn({
-                        'scale-150': ['Avneet Singh', 'Anirudh Kanwat'].includes(member.name),
+                        'scale-150': ['Avneet Singh', 'Anirudh Kanwat', 'Aman'].includes(member.name),
                         '-translate-y-2': member.name === 'Anirudh Kanwat',
                       })}
                     />
