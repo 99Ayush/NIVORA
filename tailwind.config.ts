@@ -89,8 +89,8 @@ export default {
           },
         },
         'background-pan': {
-          'from': { 'background-position': '0% center' },
-          'to': { 'background-position': '-200% center' },
+          '0%': { 'background-position': '0% center' },
+          '100%': { 'background-position': '-200% center' },
         },
       },
       animation: {
