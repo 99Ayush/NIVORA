@@ -2,13 +2,13 @@ import { initializeApp, getApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  "projectId": "studio-9356365406-11a53",
-  "appId": "1:495512062480:web:42968018a0ca982b9ad895",
-  "storageBucket": "studio-9356365406-11a53.firebasestorage.app",
-  "apiKey": "AIzaSyAVWzDHxakB1YkeaBVAhXOeje6JNo8Ob6s",
-  "authDomain": "studio-9356365406-11a53.firebaseapp.com",
-  "measurementId": "",
-  "messagingSenderId": "495512062480"
+  "apiKey": "AIzaSyA2-m7Pz7G_7w_3q_3Q4-5r6t7u8i9o0p",
+  "authDomain": "nivora-dev.firebaseapp.com",
+  "projectId": "nivora-dev",
+  "storageBucket": "nivora-dev.appspot.com",
+  "messagingSenderId": "123456789012",
+  "appId": "1:123456789012:web:a1b2c3d4e5f6a7b8c9d0e1",
+  "measurementId": "G-ABCDEFGHIJ"
 };
 
 // Initialize Firebase
