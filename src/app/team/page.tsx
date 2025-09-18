@@ -74,12 +74,12 @@ export default function TeamPage() {
             {teamMembers.map((member) => (
               <Card key={member.name} className="text-center">
                 <CardHeader className="items-center">
-                  <Avatar className="h-24 w-24 mb-4">
+                  <Avatar className="h-24 w-24 mb-4 overflow-hidden">
                     <AvatarImage
                       src={member.avatarUrl}
                       alt={member.name}
                       data-ai-hint="person portrait"
-                      className={member.name === 'Avneet Singh' ? 'scale-150' : ''}
+                      className={['Avneet Singh', 'Anirudh Kanwat'].includes(member.name) ? 'scale-150' : ''}
                     />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
                   </Avatar>
