@@ -5,9 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { LogIn, UserPlus } from 'lucide-react';
+import { Briefcase, Home } from 'lucide-react';
 
-export default function LoginPage() {
+export default function SignUpPage() {
   const router = useRouter();
 
   return (
@@ -16,19 +16,19 @@ export default function LoginPage() {
       <main className="flex-1 flex items-center justify-center p-4 bg-muted/40">
         <Card className="w-full max-w-sm">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold">Welcome!</CardTitle>
+            <CardTitle className="text-2xl font-bold">New User</CardTitle>
             <CardDescription>
-              How would you like to proceed?
+              Are you a renter or a property owner?
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Button onClick={() => router.push('/login/provider')} className="w-full">
-              <LogIn className="mr-2 h-4 w-4" />
-              Login
+            <Button onClick={() => router.push('/login/provider?role=Renter')} className="w-full">
+                <Home className="mr-2 h-4 w-4" />
+                I am a Renter
             </Button>
-            <Button onClick={() => router.push('/signup')} variant="outline" className="w-full">
-              <UserPlus className="mr-2 h-4 w-4" />
-              New User Sign In
+            <Button onClick={() => router.push('/login/provider?role=Owner')} variant="outline" className="w-full">
+               <Briefcase className="mr-2 h-4 w-4" />
+                I am an Owner
             </Button>
           </CardContent>
         </Card>
