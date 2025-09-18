@@ -2,12 +2,12 @@ import { initializeApp, getApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  "projectId": "studio-9356365406-11a53",
-  "appId": "1:495512062480:web:42968018a0ca982b9ad895",
-  "storageBucket": "studio-9356365406-11a53.firebasestorage.app",
+  "projectId": "nextn",
+  "appId": "1:495512062480:web:d02a50c441b4b1a29ad895",
+  "storageBucket": "nextn.appspot.com",
   "apiKey": "AIzaSyAVWzDHxakB1YkeaBVAhXOeje6JNo8Ob6s",
-  "authDomain": "studio-9356365406-11a53.firebaseapp.com",
-  "measurementId": "",
+  "authDomain": "nextn.firebaseapp.com",
+  "measurementId": "G-599186EZG3",
   "messagingSenderId": "495512062480"
 };
 
