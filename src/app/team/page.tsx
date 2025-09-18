@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: 'Ayush Kumar',
     role: 'Team Leader',
-    avatarUrl: 'https://picsum.photos/seed/ayush/100/100',
+    avatarUrl: 'https://i.ibb.co/RpdSB9cF/me.jpg',
     avatarFallback: 'AK',
     socials: {
       linkedin: '#',
