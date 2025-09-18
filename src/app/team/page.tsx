@@ -25,7 +25,7 @@ const teamMembers = [
   {
     name: 'Aanchal Chaudhary',
     role: 'Tech Specialist',
-    avatarUrl: 'https://picsum.photos/seed/aanchal/100/100',
+    avatarUrl: 'https://i.ibb.co/XZ8529X7/ji.jpg',
     avatarFallback: 'AC',
      socials: {
       linkedin: '#',
@@ -68,7 +68,7 @@ export default function TeamPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 container mx-auto p-4 md:p-6">
+      <main className="flex-1 container mx-auto p-4 md-p-6">
         <section className="py-12">
           <h1 className="text-4xl sm:text-5xl font-bold font-headline text-center mb-10">Meet Our Team</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
