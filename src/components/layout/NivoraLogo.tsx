@@ -6,18 +6,18 @@ export default function NivoraLogo(props: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
-      className={cn("fill-current", props.className)}
+      className={cn(props.className)}
       {...props}
     >
       <path
-        fill="currentColor"
+        fill="#50207A"
         d="M20 50 L50 20 L80 50 L80 80 L20 80 Z"
         stroke="hsl(var(--background))"
         strokeWidth="4"
         strokeLinejoin="round"
       />
       <path
-        fill="hsl(var(--primary))"
+        fill="#F5A623"
         d="M20 50 L50 20 L50 80 L20 80 Z"
         stroke="hsl(var(--background))"
         strokeWidth="4"
