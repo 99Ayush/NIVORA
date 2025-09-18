@@ -34,7 +34,7 @@ const teamMembers = [
    {
     name: 'Avneet Singh',
     role: 'Tech Specialist',
-    avatarUrl: 'https://picsum.photos/seed/avneet-profile/100/100',
+    avatarUrl: 'https://picsum.photos/seed/avneet-singh/100/100',
     avatarFallback: 'AS',
      socials: {
       linkedin: '#',
@@ -44,7 +44,7 @@ const teamMembers = [
    {
     name: 'Anirudh Kanwat',
     role: 'Integration Expert',
-    avatarUrl: 'https://picsum.photos/seed/anirudh-kanwat-profile/100/100',
+    avatarUrl: 'https://picsum.photos/seed/anirudh-kanwat/100/100',
     avatarFallback: 'AK',
      socials: {
       linkedin: '#',
@@ -54,7 +54,7 @@ const teamMembers = [
   {
     name: 'Aman',
     role: 'Content Specialist',
-    avatarUrl: 'https://picsum.photos/seed/aman/100/100',
+    avatarUrl: 'https://drive.google.com/uc?export=view&id=1FeVw4Nwj6X6B5t24_Jd8DzLRr3idI-EU',
     avatarFallback: 'A',
      socials: {
       linkedin: '#',
