@@ -44,7 +44,7 @@ const teamMembers = [
    {
     name: 'Anirudh Kanwat',
     role: 'Integration Expert',
-    avatarUrl: '/anirudh-kanwat.jpg',
+    avatarUrl: 'https://picsum.photos/seed/anirudh/100/100',
     avatarFallback: 'AK',
      socials: {
       linkedin: '#',
