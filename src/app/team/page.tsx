@@ -34,7 +34,7 @@ const teamMembers = [
    {
     name: 'Avneet Singh',
     role: 'Tech Specialist',
-    avatarUrl: 'https://picsum.photos/seed/avneet/100/100',
+    avatarUrl: 'https://picsum.photos/seed/avneet-profile/100/100',
     avatarFallback: 'AS',
      socials: {
       linkedin: '#',
@@ -44,7 +44,7 @@ const teamMembers = [
    {
     name: 'Anirudh Kanwat',
     role: 'Integration Expert',
-    avatarUrl: 'https://picsum.photos/seed/anirudh/100/100',
+    avatarUrl: 'https://picsum.photos/seed/anirudh-kanwat-profile/100/100',
     avatarFallback: 'AK',
      socials: {
       linkedin: '#',
