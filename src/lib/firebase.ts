@@ -2,13 +2,13 @@ import { initializeApp, getApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  "projectId": "nextn",
-  "appId": "1:495512062480:web:d02a50c441b4b1a29ad895",
-  "storageBucket": "nextn.appspot.com",
-  "apiKey": "AIzaSyAVWzDHxakB1YkeaBVAhXOeje6JNo8Ob6s",
-  "authDomain": "nextn.firebaseapp.com",
-  "measurementId": "G-599186EZG3",
-  "messagingSenderId": "495512062480"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
