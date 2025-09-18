@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Linkedin, Github } from 'lucide-react';
 import type { Metadata } from 'next';
+import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
     title: 'Our Team - Nivora',
@@ -79,7 +80,10 @@ export default function TeamPage() {
                       src={member.avatarUrl}
                       alt={member.name}
                       data-ai-hint="person portrait"
-                      className={['Avneet Singh', 'Anirudh Kanwat'].includes(member.name) ? 'scale-150' : ''}
+                      className={cn({
+                        'scale-150': ['Avneet Singh', 'Anirudh Kanwat'].includes(member.name),
+                        '-translate-y-2': member.name === 'Anirudh Kanwat',
+                      })}
                     />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
                   </Avatar>
