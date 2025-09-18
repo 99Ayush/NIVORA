@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SearchForm from "@/components/search/SearchForm";
+import AboutUs from "@/components/home/AboutUs";
 import Faq from "@/components/home/Faq";
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
           <SearchForm />
         </section>
 
+        <AboutUs />
         <Faq />
 
       </main>
