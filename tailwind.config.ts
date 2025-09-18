@@ -88,15 +88,15 @@ export default {
             height: '0',
           },
         },
-        'glow': {
-          '0%, 100%': { 'text-shadow': '0 0 15px rgba(214, 185, 252, 0.5), 0 0 20px rgba(214, 185, 252, 0.3)' },
-          '50%': { 'text-shadow': '0 0 25px rgba(214, 185, 252, 0.8), 0 0 35px rgba(214, 185, 252, 0.6)' },
-        }
+        'background-pan': {
+          'from': { 'background-position': '0% center' },
+          'to': { 'background-position': '-200% center' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'glow': 'glow 4s ease-in-out infinite',
+        'background-pan': 'background-pan 3s linear infinite',
       },
     },
   },
