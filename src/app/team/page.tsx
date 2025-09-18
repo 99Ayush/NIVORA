@@ -81,7 +81,8 @@ export default function TeamPage() {
                       alt={member.name}
                       data-ai-hint="person portrait"
                       className={cn({
-                        'scale-150': ['Avneet Singh', 'Anirudh Kanwat', 'Aman'].includes(member.name),
+                        'scale-150': ['Avneet Singh', 'Anirudh Kanwat'].includes(member.name),
+                        'scale-[1.4]': member.name === 'Aman',
                         '-translate-y-2': member.name === 'Anirudh Kanwat',
                       })}
                     />
