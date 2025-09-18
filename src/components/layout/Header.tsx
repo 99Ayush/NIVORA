@@ -13,6 +13,9 @@ export default function Header() {
           <span className="text-xl font-bold text-primary">Nivora</span>
         </Link>
         <div className="flex items-center gap-2">
+           <Link href="/team">
+            <Button variant="ghost">Our Team</Button>
+          </Link>
           <Link href="/contact">
             <Button variant="ghost">Contact Us</Button>
           </Link>
