@@ -15,25 +15,42 @@ export default function Footer() {
               Your one-stop solution to finding the best PGs, messes, and flats near your college. We provide AI-powered insights and genuine reviews to help you find your home away from home.
             </p>
           </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Useful Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/listings" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Listings
-                </Link>
-              </li>
-               <li>
-                <Link href="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+          <div className="grid grid-cols-2 md:col-span-2 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Useful Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/listings" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Listings
+                  </Link>
+                </li>
+                 <li>
+                  <Link href="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Other Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="#" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Contact</h3>
