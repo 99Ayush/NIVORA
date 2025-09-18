@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: 'Aman',
     role: 'Content Specialist',
-    avatarUrl: 'https://i.ibb.co/BVC1YQzq/Whats-App-Image-2025-09-18-at-21-14-08-b73b2ec6.jpg',
+    avatarUrl: 'https://i.ibb.co/JRNz83D3/Whats-App-Image-2025-09-18-at-23-42-24-11b09c84.jpg',
     avatarFallback: 'AC',
      socials: {
       linkedin: '#',
