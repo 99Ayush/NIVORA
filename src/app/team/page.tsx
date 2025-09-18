@@ -34,7 +34,7 @@ const teamMembers = [
   },
    {
     name: 'Avneet Singh',
-    role: 'Tech Specialist',
+    role: 'Content Specialist',
     avatarUrl: 'https://i.ibb.co/4ZzqPLTw/Whats-App-Image-2025-09-18-at-21-14-08-8624a829.jpg',
     avatarFallback: 'AS',
      socials: {
