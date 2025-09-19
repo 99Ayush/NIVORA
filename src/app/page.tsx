@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from 'react';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SearchForm from "@/components/search/SearchForm";
@@ -7,7 +8,22 @@ import AboutUs from "@/components/home/AboutUs";
 import Faq from "@/components/home/Faq";
 
 export default function Home() {
+  const [typedText, setTypedText] = useState('');
   const fullText = "Find Your Home Away From Home. Discover the best PGs, messes, and flats near your college with AI-powered insights.";
+
+  useEffect(() => {
+    let i = 0;
+    const typing = setInterval(() => {
+      if (i < fullText.length) {
+        setTypedText((prev) => prev + fullText.charAt(i));
+        i++;
+      } else {
+        clearInterval(typing);
+      }
+    }, 25); // Adjust typing speed here
+
+    return () => clearInterval(typing);
+  }, [fullText]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -18,7 +34,7 @@ export default function Home() {
             Nivora
           </h1>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto italic min-h-[48px] md:min-h-[56px]">
-            {fullText}
+            {typedText}
           </p>
         </section>
         
