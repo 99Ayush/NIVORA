@@ -28,7 +28,7 @@ export default function Help() {
   return (
     <section className="w-full max-w-5xl mx-auto py-12">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold font-headline">Help & Support</h2>
+        <h2 className="text-3xl font-bold font-headline">Frequently Asked Questions</h2>
         <p className="text-muted-foreground mt-2">
           Have questions? We've got answers.
         </p>
