@@ -114,6 +114,12 @@
       "description": "A third unique hostel space.",
       "imageUrl": "https://picsum.photos/seed/uhostel3/600/400",
       "imageHint": "student hostel"
+    },
+    {
+      "id": "jcb-construction",
+      "description": "A JCB digger at a construction site.",
+      "imageUrl": "https://picsum.photos/seed/jcb/600/400",
+      "imageHint": "construction vehicle"
     }
   ]
 }
