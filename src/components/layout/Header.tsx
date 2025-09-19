@@ -27,7 +27,9 @@ export default function Header() {
           <Link href="/contact">
             <Button variant="ghost">Contact Us</Button>
           </Link>
-          <Button variant="ghost">Marketplace</Button>
+          <Link href="/marketplace">
+            <Button variant="ghost">Marketplace</Button>
+          </Link>
           <HelpDialog />
           <AuthButton />
         </div>
@@ -52,7 +54,9 @@ export default function Header() {
                   <SheetClose asChild><Button variant="ghost" className="justify-start">Contact Us</Button></SheetClose>
                 </Link>
                 <div className="mt-4 border-t pt-4">
-                  <Button variant="ghost" className="justify-start w-full mb-2">Marketplace</Button>
+                  <Link href="/marketplace" passHref>
+                    <SheetClose asChild><Button variant="ghost" className="justify-start w-full mb-2">Marketplace</Button></SheetClose>
+                  </Link>
                   <HelpDialog />
                   <div className="mt-2">
                     <AuthButton />
