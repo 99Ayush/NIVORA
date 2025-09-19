@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "How do I search for accommodations?",
-    answer: "Simply enter your college name and the area's pincode on the homepage search form and click 'Search Accommodations' to see a list of available options."
+    answer: "Simply select your city and college from the dropdown menus on the homepage and click 'Search Accommodations' to see a list of available options."
   },
   {
     question: "Are the listings on Nivora verified?",
@@ -24,11 +24,11 @@ const faqs = [
   }
 ];
 
-export default function Faq() {
+export default function Help() {
   return (
     <section className="w-full max-w-5xl mx-auto py-12">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold font-headline">Frequently Asked Questions.</h2>
+        <h2 className="text-3xl font-bold font-headline">Help & Support</h2>
         <p className="text-muted-foreground mt-2">
           Have questions? We've got answers.
         </p>

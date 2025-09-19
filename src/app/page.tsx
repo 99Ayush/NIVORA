@@ -5,7 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SearchForm from "@/components/search/SearchForm";
 import AboutUs from "@/components/home/AboutUs";
-import Faq from "@/components/home/Faq";
+import Help from "@/components/home/Help";
 
 export default function Home() {
   const [typedText, setTypedText] = useState('');
@@ -42,7 +42,7 @@ export default function Home() {
           <SearchForm />
         </section>
 
-        <Faq />
+        <Help />
         <AboutUs />
 
       </main>
