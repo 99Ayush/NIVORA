@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import Script from 'next/script';
 import StarlightBackground from '@/components/layout/StarlightBackground';
-import ZapierChatbot from '@/components/layout/ZapierChatbot';
 
 export const metadata: Metadata = {
   title: 'Nivora : Home away from Home',
@@ -28,8 +26,6 @@ export default function RootLayout({
           {children}
         </div>
         <Toaster />
-        <ZapierChatbot />
-        <Script src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces-chatbot-embed.umd.js" strategy="lazyOnload" />
       </body>
     </html>
   );
