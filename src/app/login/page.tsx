@@ -18,7 +18,7 @@ export default function LoginPage() {
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold">Welcome!</CardTitle>
             <CardDescription>
-              How would you like to proceed?
+              Login or create an account to continue.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -28,7 +28,7 @@ export default function LoginPage() {
             </Button>
             <Button onClick={() => router.push('/signup')} variant="outline" className="w-full">
               <UserPlus className="mr-2 h-4 w-4" />
-              New User Sign In
+              Sign Up
             </Button>
           </CardContent>
         </Card>
