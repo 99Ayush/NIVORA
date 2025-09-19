@@ -3,7 +3,7 @@ import { Menu } from 'lucide-react';
 import AuthButton from './AuthButton';
 import { Button } from '@/components/ui/button';
 import NivoraLogo from './NivoraLogo';
-import HelpDialog from './HelpDialog';
+import HelpButton from './HelpButton';
 import {
   Sheet,
   SheetContent,
@@ -27,7 +27,7 @@ export default function Header() {
           <Link href="/contact">
             <Button variant="ghost">Contact Us</Button>
           </Link>
-          <HelpDialog />
+          <HelpButton />
           <AuthButton />
         </div>
         {/* Mobile Navigation */}
@@ -51,7 +51,7 @@ export default function Header() {
                   <SheetClose asChild><Button variant="ghost" className="justify-start">Contact Us</Button></SheetClose>
                 </Link>
                 <div className="mt-4 border-t pt-4">
-                  <HelpDialog />
+                  <HelpButton />
                   <AuthButton />
                 </div>
               </div>
