@@ -24,13 +24,12 @@ export default function MarketplacePage() {
             After finishing, you will be able to buy useful products and services such as carpenters, electricians, etc.
             </p>
             {jcbImage && (
-              <div className="relative w-full max-w-lg h-64 mx-auto rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full max-w-lg h-64 mx-auto">
                 <Image
                   src={jcbImage.imageUrl}
                   alt={jcbImage.description}
-                  width={600}
-                  height={400}
-                  className="object-cover"
+                  fill
+                  className="object-contain"
                   data-ai-hint={jcbImage.imageHint}
                 />
               </div>
