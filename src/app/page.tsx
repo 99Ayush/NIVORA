@@ -9,7 +9,7 @@ import Faq from "@/components/home/Faq";
 
 export default function Home() {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Find Your Home Away From Home. Discover the best PGs, messes, and flats near your college with AI-powered insights.";
+  const fullText = "find Your Home Away From Home. Discover the best PGs, messes, and flats near your college with AI-powered insights.";
 
   useEffect(() => {
     let i = 0;
