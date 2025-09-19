@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
   "projectId": "studio-9356365406-11a53",
-  "appId": "1:495512062480:web:42968018a0ca982b9ad895",
+  "appId": "1:495512062480:web:42968018a0ca9895",
   "apiKey": "AIzaSyAVWzDHxakB1YkeaBVAhXOeje6JNo8Ob6s",
   "authDomain": "studio-9356365406-11a53.firebaseapp.com",
   "measurementId": "",
