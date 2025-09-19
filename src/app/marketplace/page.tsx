@@ -6,7 +6,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
     title: 'Marketplace - Nivora',
-    description: 'A place to buy useful products and services.',
+    description: 'A place to buy useful household products and services.',
 };
 
 export default function MarketplacePage() {
@@ -21,7 +21,7 @@ export default function MarketplacePage() {
             Under Construction
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
-            After finishing, you will be able to buy useful products and services such as carpenters, electricians, etc.
+            After finishing, you will be able to buy useful household products and services such as carpenters, electricians, etc.
             </p>
             {jcbImage && (
               <div className="relative w-full max-w-lg h-64 mx-auto">
