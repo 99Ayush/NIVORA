@@ -35,9 +35,15 @@ export default function LoginProviderPage() {
       router.push('/');
     } catch (error: any) {
       console.error("Error signing in: ", error);
+      let description = "An unknown error occurred. Please try again.";
+      if (error.code === 'auth/wrong-password') {
+        description = "Incorrect password. Please try again.";
+      } else if (error.code === 'auth/user-not-found') {
+        description = "No account found with this email address.";
+      }
       toast({
         title: "Login Failed",
-        description: error.message || "An unknown error occurred.",
+        description: description,
         variant: "destructive",
       });
     }
