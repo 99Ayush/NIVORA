@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { auth } from '@/lib/firebase';
+import { signInWithPopup } from 'firebase/auth';
+import { auth, googleProvider } from '@/lib/firebase';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Header from '@/components/layout/Header';
@@ -26,9 +26,8 @@ export default function LoginProviderPage() {
   const role = searchParams.get('role');
 
   const handleSignIn = async () => {
-    const provider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
+      await signInWithPopup(auth, googleProvider);
       router.push('/');
     } catch (error) {
       console.error("Error signing in with Google: ", error);
