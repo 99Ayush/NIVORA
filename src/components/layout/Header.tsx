@@ -52,7 +52,9 @@ export default function Header() {
                 </Link>
                 <div className="mt-4 border-t pt-4">
                   <HelpDialog />
-                  <AuthButton />
+                  <div className="mt-2">
+                    <AuthButton />
+                  </div>
                 </div>
               </div>
             </SheetContent>

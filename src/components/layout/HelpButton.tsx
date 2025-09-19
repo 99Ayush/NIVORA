@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+
 
 declare global {
   namespace JSX {
@@ -34,9 +36,23 @@ export default function HelpButton() {
   };
 
   return (
-    <Button variant="ghost" onClick={openChatbot}>
-      <MessageSquare className="mr-2 h-4 w-4" />
-      Help
-    </Button>
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>
+            <Button
+              variant="default"
+              size="icon"
+              className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-primary hover:bg-primary/90 transform hover:scale-110 transition-transform"
+              onClick={openChatbot}
+            >
+              <MessageSquare className="h-7 w-7" />
+              <span className="sr-only">Open Chatbot</span>
+            </Button>
+        </TooltipTrigger>
+        <TooltipContent side="left">
+          <p>Need Help? Chat with us!</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 }

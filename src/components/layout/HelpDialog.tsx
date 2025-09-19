@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Mail, MessageSquare } from "lucide-react";
+import { Mail, HelpCircle } from "lucide-react";
 
 const faqs = [
   {
@@ -32,15 +32,15 @@ export default function HelpDialog() {
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="ghost">
-          <MessageSquare className="mr-2 h-4 w-4" />
-          Help
+          <HelpCircle className="mr-2 h-4 w-4" />
+          Help & FAQ
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Help & Support</DialogTitle>
           <DialogDescription>
-            Here are some frequently asked questions. If you need more help, feel free to contact us.
+            Here are some frequently asked questions. If you need more help, feel free to contact us or use our chatbot.
           </DialogDescription>
         </DialogHeader>
         <div className="py-4">
