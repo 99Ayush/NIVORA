@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const teamMembers = [
   {
     name: 'Ayush Kumar',
-    role: 'Team Leader & Tech Specialist',
+    role: 'Team Leader / Tech Specialist',
     avatarUrl: 'https://i.ibb.co/RpdSB9cF/me.jpg',
     avatarFallback: 'AK',
     socials: {
