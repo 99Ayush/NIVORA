@@ -11,7 +11,11 @@ export default function SignUpPage() {
   const router = useRouter();
 
   const handleRoleSelection = (role: 'renter' | 'owner') => {
-    router.push(`/signup/details?role=${role}`);
+    if (role === 'owner') {
+      router.push('/signup/owner');
+    } else {
+      router.push(`/signup/details?role=${role}`);
+    }
   };
 
   return (
