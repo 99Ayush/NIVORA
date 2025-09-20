@@ -13,6 +13,7 @@ import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Textarea } from '@/components/ui/textarea';
+import { submitOwnerApplicationAction } from '@/app/actions';
 
 const ownerSignupSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -45,19 +46,23 @@ export default function OwnerSignUpPage() {
   });
 
   const handleSignUp = async (data: OwnerSignupFormValues) => {
-    // In a real app, you would handle the user creation and property data submission
-    // to your backend here, including the image uploads.
-    console.log("Owner Signup Data:", data);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // This now calls the server action.
+    // In a real app, you'd also handle image uploads here, likely to a cloud storage bucket.
+    const result = await submitOwnerApplicationAction(data);
 
-    toast({
-      title: "Registration Submitted!",
-      description: "Thank you! Your submission is under review. You will be notified via email and SMS upon verification.",
-    });
-
-    router.push('/');
+    if (result.success) {
+      toast({
+        title: "Registration Submitted!",
+        description: "Thank you! Your submission is under review. You will be notified via email and SMS upon verification.",
+      });
+      router.push('/');
+    } else {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   return (
