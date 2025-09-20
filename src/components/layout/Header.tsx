@@ -9,13 +9,14 @@ import {
   SheetTrigger,
   SheetClose
 } from "@/components/ui/sheet"
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header className="py-4 px-4 md:px-6 border-b border-border/40">
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary">Nivora</span>
+          <Image src="https://i.ibb.co/Kp74Sqhw/Whats-App-Image-2025-09-21-at-00-02-33-d02f7ac2.jpg" alt="Nivora Logo" width={100} height={28} priority />
         </Link>
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-2">
