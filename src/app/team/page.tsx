@@ -59,7 +59,7 @@ const teamMembers = [
     avatarUrl: 'https://i.ibb.co/JRNz83D3/Whats-App-Image-2025-09-18-at-23-42-24-11b09c84.jpg',
     avatarFallback: 'AC',
      socials: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/aman-verdiya-561095325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       github: '#',
     },
   },
