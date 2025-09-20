@@ -49,7 +49,7 @@ const teamMembers = [
     avatarUrl: 'https://i.ibb.co/gMjyf40c/Whats-App-Image-2025-09-18-at-21-14-07-d1f702a9.jpg',
     avatarFallback: 'AK',
      socials: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/anirudh-kanwat-12822832a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       github: '#',
     },
   },
