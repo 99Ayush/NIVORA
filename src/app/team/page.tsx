@@ -69,7 +69,7 @@ const teamMembers = [
     avatarUrl: PlaceHolderImages.find((img) => img.id === 'vishwas-shukla-avatar')?.imageUrl || '',
     avatarFallback: 'VS',
      socials: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/vishwas-shukla-002898331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       github: '#',
     },
   },
