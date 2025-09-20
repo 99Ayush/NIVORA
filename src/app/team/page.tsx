@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Linkedin, Github } from 'lucide-react';
 import type { Metadata } from 'next';
 import { cn } from '@/lib/utils';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
     title: 'Our Team - Nivora',
@@ -65,7 +66,7 @@ const teamMembers = [
   {
     name: 'Vishwas Shukla',
     role: 'Content Specialist',
-    avatarUrl: 'https://i.ibb.co/9HJZrWxY/Whats-App-Image-2025-09-20-at-10-44-43-b54b743e.jpg',
+    avatarUrl: PlaceHolderImages.find((img) => img.id === 'vishwas-shukla-avatar')?.imageUrl || '',
     avatarFallback: 'VS',
      socials: {
       linkedin: '#',
