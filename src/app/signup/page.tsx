@@ -9,7 +9,6 @@ import { auth } from '@/lib/firebase';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -82,6 +81,40 @@ export default function SignUpPage() {
                 <CardContent className="space-y-4">
                   <FormField
                     control={form.control}
+                    name="role"
+                    render={({ field }) => (
+                      <FormItem className="space-y-3">
+                        <FormLabel>You are a...</FormLabel>
+                        <FormControl>
+                          <RadioGroup
+                            onValueChange={field.onChange}
+                            defaultValue={field.value}
+                            className="flex space-x-4"
+                          >
+                            <FormItem className="flex items-center space-x-2 space-y-0">
+                              <FormControl>
+                                <RadioGroupItem value="renter" />
+                              </FormControl>
+                              <FormLabel className="font-normal">
+                                Renter
+                              </FormLabel>
+                            </FormItem>
+                            <FormItem className="flex items-center space-x-2 space-y-0">
+                              <FormControl>
+                                <RadioGroupItem value="owner" />
+                              </FormControl>
+                              <FormLabel className="font-normal">
+                                Owner
+                              </FormLabel>
+                            </FormItem>
+                          </RadioGroup>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
                     name="name"
                     render={({ field }) => (
                         <FormItem>
@@ -117,40 +150,6 @@ export default function SignUpPage() {
                             </FormControl>
                             <FormMessage />
                         </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="role"
-                    render={({ field }) => (
-                      <FormItem className="space-y-3">
-                        <FormLabel>You are a...</FormLabel>
-                        <FormControl>
-                          <RadioGroup
-                            onValueChange={field.onChange}
-                            defaultValue={field.value}
-                            className="flex space-x-4"
-                          >
-                            <FormItem className="flex items-center space-x-2 space-y-0">
-                              <FormControl>
-                                <RadioGroupItem value="renter" />
-                              </FormControl>
-                              <FormLabel className="font-normal">
-                                Renter
-                              </FormLabel>
-                            </FormItem>
-                            <FormItem className="flex items-center space-x-2 space-y-0">
-                              <FormControl>
-                                <RadioGroupItem value="owner" />
-                              </FormControl>
-                              <FormLabel className="font-normal">
-                                Owner
-                              </FormLabel>
-                            </FormItem>
-                          </RadioGroup>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
                     )}
                   />
                 </CardContent>
