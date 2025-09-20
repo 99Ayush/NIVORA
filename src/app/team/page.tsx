@@ -39,7 +39,7 @@ const teamMembers = [
     avatarUrl: 'https://i.ibb.co/4ZzqPLTw/Whats-App-Image-2025-09-18-at-21-14-08-8624a829.jpg',
     avatarFallback: 'AS',
      socials: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/avneet-singh-810908321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       github: '#',
     },
   },
