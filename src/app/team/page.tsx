@@ -19,7 +19,7 @@ const teamMembers = [
     avatarUrl: 'https://i.ibb.co/RpdSB9cF/me.jpg',
     avatarFallback: 'AK',
     socials: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/ayush-kumar-562666346?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMb5ypQuPRBe%2FBzLUzV9hig%3D%3D',
       github: '#',
     },
   },
