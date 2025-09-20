@@ -9,7 +9,7 @@ import Help from "@/components/home/Help";
 
 export default function Home() {
   const [typedText, setTypedText] = useState('');
-  const fullText = "find Your Home Away From Home. Discover the best PGs, and flats near your college with AI-powered insights.";
+  const fullText = "find Your Home Away From Home. Discover the best PGs, hostels, and flats near your college with AI-powered insights.";
 
   useEffect(() => {
     let i = 0;
