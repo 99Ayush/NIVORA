@@ -63,10 +63,10 @@ const teamMembers = [
     },
   },
   {
-    name: 'New Member',
+    name: 'Vishwas Shukla',
     role: 'Content Specialist',
     avatarUrl: 'https://i.ibb.co/9HJZrWxY/Whats-App-Image-2025-09-20-at-10-44-43-b54b743e.jpg',
-    avatarFallback: '??',
+    avatarFallback: 'VS',
      socials: {
       linkedin: '#',
       github: '#',
