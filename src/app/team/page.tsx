@@ -29,7 +29,7 @@ const teamMembers = [
     avatarUrl: 'https://i.ibb.co/XZ8529X7/ji.jpg',
     avatarFallback: 'AC',
      socials: {
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/aanchal-chaudhary-bb3a8030a',
       github: '#',
     },
   },
@@ -66,7 +66,7 @@ const teamMembers = [
   {
     name: 'Vishwas Shukla',
     role: 'Content Specialist',
-    avatarUrl: PlaceHolderImages.find((img) => img.id === 'vishwas-shukla-avatar')?.imageUrl || '',
+    avatarUrl: 'https://i.ibb.co/LdLw6DGK/Whats-App-Image-2025-09-20-at-10-44-44-170dc01f.jpg',
     avatarFallback: 'VS',
      socials: {
       linkedin: 'https://www.linkedin.com/in/vishwas-shukla-002898331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
