@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
                 <CardTitle className="text-3xl sm:text-4xl font-bold font-headline text-center">Privacy Policy</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 text-foreground/90">
-                <p className="text-sm text-muted-foreground text-center">Last Updated: {new Date().toLocaleDateString()}</p>
+                <p className="text-sm text-muted-foreground text-center">Last Updated: September 21, 2024</p>
                 
                 <div className="space-y-2">
                     <h2 className="text-xl font-semibold">1. Information We Collect</h2>
