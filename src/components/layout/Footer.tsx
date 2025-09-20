@@ -46,7 +46,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider">Other Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     Terms of Service
                   </Link>
                 </li>
