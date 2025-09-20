@@ -6,8 +6,9 @@ import Footer from '@/components/layout/Footer';
 import { listings } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Star, CheckCircle } from 'lucide-react';
+import { Star, CheckCircle, Phone, User } from 'lucide-react';
 import ReviewForm from '@/components/listings/ReviewForm';
 
 interface ListingDetailPageProps {
@@ -88,7 +89,7 @@ export default function ListingDetailPage({ params }: ListingDetailPageProps) {
           </div>
 
           {/* Facilities Section */}
-          <Card className="mb-12">
+          <Card className="mb-8">
               <CardHeader>
                   <CardTitle>Details & Facilities</CardTitle>
               </CardHeader>
@@ -104,6 +105,32 @@ export default function ListingDetailPage({ params }: ListingDetailPageProps) {
                   {rentComment && <p className="text-muted-foreground italic mt-4">{rentComment}</p>}
               </CardContent>
           </Card>
+
+          {/* Contact Owner Section */}
+          <Card className="mb-12">
+            <CardHeader>
+              <CardTitle>Contact Owner</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                      <User className="h-5 w-5 text-muted-foreground" />
+                      <p className="text-lg font-medium">{listing.contact.name}</p>
+                  </div>
+                   <div className="flex items-center gap-2">
+                      <Phone className="h-5 w-5 text-muted-foreground" />
+                      <a href={`tel:${listing.contact.phone}`} className="text-lg text-accent hover:underline">{listing.contact.phone}</a>
+                  </div>
+              </div>
+              <a href={`tel:${listing.contact.phone}`}>
+                <Button>
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call Now
+                </Button>
+              </a>
+            </CardContent>
+          </Card>
+
 
           {/* Review Form Section */}
           <div className="mb-12">

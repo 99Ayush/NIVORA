@@ -7,6 +7,10 @@ export type Listing = {
   college: string;
   pincode: string;
   reviews: Review[];
+  contact: {
+    name: string;
+    phone: string;
+  };
 };
 
 export type Review = {
