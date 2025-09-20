@@ -3,7 +3,6 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import StarlightBackground from '@/components/layout/StarlightBackground';
 import ZapierChatbot from '@/components/layout/ZapierChatbot';
-import HelpButton from '@/components/layout/HelpButton';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -31,7 +30,6 @@ export default function RootLayout({
         </div>
         <Toaster />
         <ZapierChatbot />
-        <HelpButton />
       </body>
     </html>
   );
