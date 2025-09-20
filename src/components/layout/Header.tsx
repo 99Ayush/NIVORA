@@ -16,7 +16,7 @@ export default function Header() {
     <header className="py-4 px-4 md:px-6 border-b border-border/40">
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-0">
-          <Image src="https://i.ibb.co/V0b773kg/Whats-App-Image-2025-09-21-at-00-02-33-d48e50d9-removebg-preview.png" alt="Nivora Logo" width={100} height={28} priority />
+          <Image src="https://i.ibb.co/V0b773kg/Whats-App-Image-2025-09-21-at-00-02-33-d48e50d9-removebg-preview.png" alt="Nivora Logo" width={100} height={28} priority className="-ml-4" />
           <span className="text-2xl font-bold text-primary">Nivora</span>
         </Link>
         {/* Desktop Navigation */}
