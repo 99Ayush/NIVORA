@@ -17,6 +17,7 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image src="https://i.ibb.co/V0b773kg/Whats-App-Image-2025-09-21-at-00-02-33-d48e50d9-removebg-preview.png" alt="Nivora Logo" width={100} height={28} priority />
+          <span className="text-2xl font-bold">Nivora</span>
         </Link>
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-2">
