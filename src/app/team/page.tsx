@@ -65,7 +65,7 @@ const teamMembers = [
   {
     name: 'New Member',
     role: 'Role',
-    avatarUrl: 'https://picsum.photos/seed/new-member/200/200',
+    avatarUrl: 'https://i.ibb.co/9HJZrWxY/Whats-App-Image-2025-09-20-at-10-44-43-b54b743e.jpg',
     avatarFallback: '??',
      socials: {
       linkedin: '#',
