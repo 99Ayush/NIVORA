@@ -57,7 +57,7 @@ const teamMembers = [
     name: 'Aman',
     role: 'Content Specialist',
     avatarUrl: 'https://i.ibb.co/JRNz83D3/Whats-App-Image-2025-09-18-at-23-42-24-11b09c84.jpg',
-    avatarFallback: 'AC',
+    avatarFallback: 'A',
      socials: {
       linkedin: 'https://www.linkedin.com/in/aman-verdiya-561095325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       github: '#',
@@ -95,7 +95,6 @@ export default function TeamPage() {
                         'scale-150': member.name === 'Avneet Singh',
                         'scale-150 -translate-y-2': member.name === 'Anirudh Kanwat',
                         'scale-[2] -translate-y-4 -translate-x-2': member.name === 'Aman',
-                        'object-contain p-2': member.name === 'Vishwas Shukla',
                       })}
                     />
                     <AvatarFallback>{member.avatarFallback}</AvatarFallback>
