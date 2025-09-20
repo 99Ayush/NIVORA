@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,8 +8,9 @@ export default function Footer() {
       <div className="container mx-auto py-12 px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-               <span className="text-2xl font-bold">Nivora</span>
+            <div className="flex items-center gap-0 mb-4">
+               <Image src="https://i.ibb.co/V0b773kg/Whats-App-Image-2025-09-21-at-00-02-33-d48e50d9-removebg-preview.png" alt="Nivora Logo" width={100} height={28} />
+               <span className="text-2xl font-bold text-primary">Nivora</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-md">
               Your one-stop solution to finding the best PGs, messes, and flats near your college. We provide AI-powered insights and genuine reviews to help you find your home away from home.
