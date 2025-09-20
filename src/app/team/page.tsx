@@ -62,6 +62,16 @@ const teamMembers = [
       github: '#',
     },
   },
+  {
+    name: 'New Member',
+    role: 'Role',
+    avatarUrl: 'https://picsum.photos/seed/new-member/200/200',
+    avatarFallback: '??',
+     socials: {
+      linkedin: '#',
+      github: '#',
+    },
+  },
 ];
 
 export default function TeamPage() {
@@ -71,7 +81,7 @@ export default function TeamPage() {
       <main className="flex-1 container mx-auto p-4 md-p-6">
         <section className="py-12">
           <h1 className="text-4xl sm:text-5xl font-bold font-headline text-center mb-10">Meet Our Team</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {teamMembers.map((member) => (
               <Card key={member.name} className="text-center">
                 <CardHeader className="items-center">
