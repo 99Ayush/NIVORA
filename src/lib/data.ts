@@ -10,6 +10,7 @@ export const listings: Listing[] = [
     imageId: 'pg-image-1',
     college: 'BPIT',
     pincode: '110017',
+    location: { lat: 28.73544, lng: 77.11253 },
     contact: { name: 'Mr. Rajput', phone: '9876543210' },
     reviews: [
       { id: 'r1', author: 'Anonymous', rating: 4, comment: 'Room for two, AC, Almira, Bed, Fridge, washing machine (common), Table chair, Wifi. Rent -6500 pm (electricity 8rs unit)' },
@@ -25,6 +26,7 @@ export const listings: Listing[] = [
     imageId: 'pg-image-2',
     college: 'BPIT',
     pincode: '110017',
+    location: { lat: 28.7191, lng: 77.0662 },
     contact: { name: 'Mr. Singh', phone: '9876543211' },
     reviews: [
       { id: 'r2', author: 'Anonymous', rating: 4, comment: 'AC Room for 6, Separate Almira, Bed separate, Table and chair, 2 Common washroom. Rent : 6000 p/m(electricity 10rs/unit )' },
@@ -40,6 +42,7 @@ export const listings: Listing[] = [
     imageId: 'pg-image-3',
     college: 'BPIT',
     pincode: '110017',
+    location: { lat: 28.73670, lng: 77.11135 },
     contact: { name: 'Aman Sharma', phone: '9876543212' },
     reviews: [
         { id: 'r3', author: 'Anonymous', rating: 4, comment: 'Room of two, Wifi, Air conditioner, Bed, Almira, Table chair, Fridge (common), Washing machine (common). Rent – 5500 P/M (electricity – 15rs unit)' },
@@ -55,6 +58,7 @@ export const listings: Listing[] = [
     imageId: 'flat-image-1',
     college: 'BPIT',
     pincode: '110017',
+    location: { lat: 28.7183, lng: 77.0645 },
     contact: { name: 'Mrs. Verma', phone: '9876543213' },
     reviews: [
         { id: 'r4', author: 'Anonymous', rating: 4, comment: '1 BHK flat, Fully furnished with bed and kitchen, Attached washroom, Air conditioner, Geyser, Water supply 24/7, Single table chair set. Rent: 12000 p/m (electricity 8rs per unit) (member allowance 1 only), Security deposit: 2month rent' },
@@ -70,6 +74,7 @@ export const listings: Listing[] = [
     imageId: 'hostel-image-1',
     college: 'BPIT',
     pincode: '110017',
+    location: { lat: 28.7195, lng: 77.0668 },
     contact: { name: 'Nalanda Stays Mgmt', phone: '9876543214' },
     reviews: [
         { id: 'r5', author: 'Anonymous', rating: 4, comment: 'Room for 4, 4 beds in room with ac, Almira separate, Washing machine common for 15, Table chair separate, Wifi, Mess included. Rent :1.55L/yr' },
@@ -87,6 +92,7 @@ export const listings: Listing[] = [
     imageId: 'pg-image-4',
     college: 'ADGITM',
     pincode: '110092',
+    location: { lat: 28.6658, lng: 77.3154 },
     contact: { name: 'Mr. Ganga', phone: '9876543215' },
     reviews: [
         { id: 'r6', author: 'Anonymous', rating: 3, comment: 'No AC. Room for 6, Separate bed, Almira, Table chair, Fridge washing machine common, 2 Washroom common. Rent: 4500 per month (electricity 12rs unit)' },
@@ -102,6 +108,7 @@ export const listings: Listing[] = [
     imageId: 'hostel-image-2',
     college: 'ADGITM',
     pincode: '110092',
+    location: { lat: 28.6712, lng: 77.3201 },
     contact: { name: 'Vikram Homes Mgmt', phone: '9876543216' },
     reviews: [
         { id: 'r7', author: 'Anonymous', rating: 4, comment: 'Room for 2 without ac, Mess included, Almira separate, Table chair, Wifi, Washing machine common. Rent: 1L/yr' },
@@ -119,6 +126,7 @@ export const listings: Listing[] = [
     imageId: 'pg-image-5',
     college: 'VIPS',
     pincode: '110034',
+    location: { lat: 28.6948, lng: 77.1384 },
     contact: { name: 'Mahesh Kumar', phone: '9876543217' },
     reviews: [
         { id: 'r8', author: 'Anonymous', rating: 4, comment: 'Wifi, Room for 4, Separate bed, Almira, Table chair, Air conditioner, Fridge washing machine common. Rent 7000 per month (with electricity)' },
@@ -134,6 +142,7 @@ export const listings: Listing[] = [
     imageId: 'flat-image-2',
     college: 'VIPS',
     pincode: '110034',
+    location: { lat: 28.6982, lng: 77.1421 },
     contact: { name: 'Property Manager', phone: '9876543218' },
     reviews: [
         { id: 'r9', author: 'Anonymous', rating: 4, comment: '2BHK flat, Fully furnished kitchen and rooms, Common washroom, Air conditioner in each room, Water supply 24/7, Table and chair set of 4. Rent: 25000 p/m (electricity 10rs per unit) (member allowed 4), Security deposit: 3 month rent in advance' },
@@ -151,6 +160,7 @@ export const listings: Listing[] = [
     imageId: 'pg-image-6',
     college: 'Delhi Technical Campus',
     pincode: '201301',
+    location: { lat: 28.5806, lng: 77.3188 },
     contact: { name: 'Sushant Singh', phone: '9876543219' },
     reviews: [
         { id: 'r10', author: 'Anonymous', rating: 4, comment: 'Wifi, Room for 3, Air conditioner, Bed, Almira, Fridge washing machine (common), Table chair. Rent 9000 per month (with electricity)' },
@@ -166,6 +176,7 @@ export const listings: Listing[] = [
     imageId: 'hostel-image-3',
     college: 'Delhi Technical Campus',
     pincode: '201301',
+    location: { lat: 28.5833, lng: 77.3215 },
     contact: { name: 'Sunrise Hostel Mgmt', phone: '9876543220' },
     reviews: [
         { id: 'r11', author: 'Anonymous', rating: 4, comment: 'Room for two with ac, Mess included, Washing machine common for 15, Almira, Table and chair, Wifi. Rent :1.35L/yr' },
@@ -174,3 +185,4 @@ export const listings: Listing[] = [
     ],
   },
 ];
+
