@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Star, CheckCircle, Phone, User } from 'lucide-react';
 import ReviewForm from '@/components/listings/ReviewForm';
+import ListingDetailMap from '@/components/listings/ListingDetailMap';
 
 interface ListingDetailPageProps {
   params: {
@@ -66,7 +67,7 @@ export default function ListingDetailPage({ params }: ListingDetailPageProps) {
         <div className="max-w-4xl mx-auto">
           {/* Image Section */}
           {image && (
-            <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8">
+            <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-6">
               <Image
                 src={image.imageUrl}
                 alt={image.description}
@@ -78,7 +79,7 @@ export default function ListingDetailPage({ params }: ListingDetailPageProps) {
           )}
 
           {/* Title and Info */}
-          <div className="mb-8">
+          <div className="mb-6">
             <div className="flex justify-between items-start mb-2">
               <h1 className="text-4xl font-bold font-headline">{listing.name}</h1>
               <Badge variant={badgeVariantMap[listing.type] || 'default'} className="text-lg px-4 py-1">
@@ -88,60 +89,75 @@ export default function ListingDetailPage({ params }: ListingDetailPageProps) {
             <p className="text-lg text-muted-foreground">{listing.address}</p>
           </div>
 
-          {/* Facilities Section */}
-          <Card className="mb-8">
-              <CardHeader>
-                  <CardTitle>Details & Facilities</CardTitle>
-              </CardHeader>
-              <CardContent>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                      {facilities.map((facility, index) => (
-                          <li key={index} className="flex items-center gap-2">
-                              <CheckCircle className="h-5 w-5 text-green-500" />
-                              <span>{facility}</span>
-                          </li>
-                      ))}
-                  </ul>
-                  {rentComment && <p className="text-muted-foreground italic mt-4">{rentComment}</p>}
-              </CardContent>
-          </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Left Column */}
+            <div>
+               {/* Facilities Section */}
+              <Card className="mb-6">
+                  <CardHeader>
+                      <CardTitle>Details & Facilities</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                          {facilities.map((facility, index) => (
+                              <li key={index} className="flex items-center gap-2">
+                                  <CheckCircle className="h-5 w-5 text-green-500" />
+                                  <span>{facility}</span>
+                              </li>
+                          ))}
+                      </ul>
+                      {rentComment && <p className="text-muted-foreground italic mt-4">{rentComment}</p>}
+                  </CardContent>
+              </Card>
 
-          {/* Contact Owner Section */}
-          <Card className="mb-12">
-            <CardHeader>
-              <CardTitle>Contact Owner</CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                      <User className="h-5 w-5 text-muted-foreground" />
-                      <p className="text-lg font-medium">{listing.contact.name}</p>
+              {/* Contact Owner Section */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Contact Owner</CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                          <User className="h-5 w-5 text-muted-foreground" />
+                          <p className="text-lg font-medium">{listing.contact.name}</p>
+                      </div>
+                       <div className="flex items-center gap-2">
+                          <Phone className="h-5 w-5 text-muted-foreground" />
+                          <a href={`tel:${listing.contact.phone}`} className="text-lg text-accent hover:underline">{listing.contact.phone}</a>
+                      </div>
                   </div>
-                   <div className="flex items-center gap-2">
-                      <Phone className="h-5 w-5 text-muted-foreground" />
-                      <a href={`tel:${listing.contact.phone}`} className="text-lg text-accent hover:underline">{listing.contact.phone}</a>
-                  </div>
-              </div>
-              <a href={`tel:${listing.contact.phone}`}>
-                <Button>
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now
-                </Button>
-              </a>
-            </CardContent>
-          </Card>
+                  <a href={`tel:${listing.contact.phone}`}>
+                    <Button>
+                      <Phone className="mr-2 h-4 w-4" />
+                      Call Now
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
+            
+            {/* Right Column (Map) */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Location</CardTitle>
+              </CardHeader>
+              <CardContent className="h-64 md:h-full p-0">
+                <ListingDetailMap listing={listing} />
+              </CardContent>
+            </Card>
+          </div>
 
 
           {/* Review Form Section */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold font-headline mb-6">Leave a Review</h2>
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold font-headline mb-4">Leave a Review</h2>
             <ReviewForm />
           </div>
 
           {/* Existing Reviews Section */}
           <div>
-            <h2 className="text-3xl font-bold font-headline mb-6">Verified Reviews</h2>
-            <div className="space-y-6">
+            <h2 className="text-3xl font-bold font-headline mb-4">Verified Reviews</h2>
+            <div className="space-y-4">
               {listing.reviews.map((review) => (
                 <Card key={review.id}>
                   <CardHeader>
