@@ -2,8 +2,9 @@
 
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { memo, useEffect, useRef } from 'react';
-import type { Map } from 'leaflet';
+import { memo, useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import type { LatLngBounds } from 'leaflet';
 
 // This is to fix the default icon issue with react-leaflet
 const defaultIcon = new L.Icon({
@@ -27,62 +28,49 @@ interface MapComponentProps {
   locations?: Location[];
 }
 
-function MapComponent({ locations = [] }: MapComponentProps) {
-  const mapRef = useRef<Map | null>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const defaultCenter: [number, number] = [28.6139, 77.2090]; // Delhi
-  const defaultZoom = 11;
-
-  useEffect(() => {
-    if (containerRef.current && !mapRef.current) {
-        mapRef.current = L.map(containerRef.current, {
-            center: defaultCenter,
-            zoom: defaultZoom,
-            scrollWheelZoom: false,
-        });
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(mapRef.current);
-    }
-  }, []); // Only run once on mount to initialize the map
-
-  useEffect(() => {
-    if (mapRef.current) {
-      // Clear existing markers
-      mapRef.current.eachLayer((layer) => {
-        if (layer instanceof L.Marker) {
-          mapRef.current!.removeLayer(layer);
-        }
-      });
-
-      // Add new markers
-      locations.forEach(loc => {
-        const marker = L.marker([loc.lat, loc.lng]).addTo(mapRef.current!);
-        if (loc.name) {
-          marker.bindPopup(loc.name);
-        }
-      });
-
-      // Update map view
-      if (locations.length > 0) {
-        if (locations.length > 1) {
-            const bounds = new L.LatLngBounds(locations.map(loc => [loc.lat, loc.lng]));
-            mapRef.current.flyToBounds(bounds, { padding: [50, 50] });
+// A helper component to update the map's view when locations change
+function MapUpdater({ locations }: { locations: Location[] }) {
+    const map = useMap();
+    useEffect(() => {
+        if (locations.length > 0) {
+            if (locations.length > 1) {
+                const bounds = new L.LatLngBounds(locations.map(loc => [loc.lat, loc.lng]));
+                map.flyToBounds(bounds, { padding: [50, 50], maxZoom: 16 });
+            } else {
+                map.flyTo([locations[0].lat, locations[0].lng], 15);
+            }
         } else {
-            mapRef.current.flyTo([locations[0].lat, locations[0].lng], 15);
+             // If no locations, reset to default view
+            map.flyTo([28.6139, 77.2090], 11);
         }
-      } else if (!locations || locations.length === 0) {
-         mapRef.current.flyTo(defaultCenter, defaultZoom);
-      }
-    }
-  }, [locations]); // Rerun effect if locations change
+    }, [locations, map]);
+    return null;
+}
 
+
+function MapComponent({ locations = [] }: MapComponentProps) {
+  const defaultCenter: [number, number] = [28.6139, 77.2090]; // Delhi
+  
   return (
-    <div 
-        ref={containerRef} 
+    <MapContainer 
+        center={defaultCenter} 
+        zoom={11} 
+        scrollWheelZoom={false} 
         className="w-full h-full rounded-md z-0"
-    />
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      
+      {locations.map((loc, index) => (
+        <Marker key={index} position={[loc.lat, loc.lng]}>
+          {loc.name && <Popup>{loc.name}</Popup>}
+        </Marker>
+      ))}
+
+      <MapUpdater locations={locations} />
+    </MapContainer>
   );
 }
 
