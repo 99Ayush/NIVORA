@@ -1,11 +1,12 @@
-import { Suspense } from 'react';
+import { Suspense, useMemo } from 'react';
 import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ListingCard from '@/components/listings/ListingCard';
-import ListingsMap from '@/components/listings/ListingsMap';
 import { listings } from '@/lib/data';
 import { Skeleton } from '@/components/ui/skeleton';
+import ListingMap from '@/components/listings/ListingMap';
+
 
 export const metadata: Metadata = {
   title: 'Listings - Nivora',
@@ -40,7 +41,7 @@ export default function ListingsPage({ searchParams }: ListingsPageProps) {
   const collegeName = searchParams.college || 'your college';
   const pincode = searchParams.pincode || 'your area';
 
-  const filteredListings = listings.filter((listing) => {
+  const filteredListings = useMemo(() => listings.filter((listing) => {
     const collegeQuery = searchParams.college?.toLowerCase();
     const pincodeQuery = searchParams.pincode;
 
@@ -49,7 +50,11 @@ export default function ListingsPage({ searchParams }: ListingsPageProps) {
     const listingCollege = listing.college.toLowerCase();
 
     return listingCollege.includes(collegeQuery) && listing.pincode === pincodeQuery;
-  });
+  }), [searchParams.college, searchParams.pincode]);
+
+  const mapLocations = useMemo(() => filteredListings
+    .filter(l => l.location)
+    .map(l => ({...l.location, name: l.name})), [filteredListings]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -85,8 +90,8 @@ export default function ListingsPage({ searchParams }: ListingsPageProps) {
 
           </div>
           <div className="hidden lg:block lg:col-span-1 relative">
-             <div className="sticky top-24">
-               <ListingsMap />
+             <div className="sticky top-24 h-[60vh]">
+               <ListingMap locations={mapLocations} />
             </div>
           </div>
         </div>
