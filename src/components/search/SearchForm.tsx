@@ -142,7 +142,12 @@ export default function SearchForm() {
                   <FormLabel>College Name</FormLabel>
                   <div className="relative">
                     <GraduationCap className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                    <Select onValueChange={field.onChange} value={field.value} disabled={!selectedCity}> 
+                    <Select
+                      key={selectedCity}
+                      onValueChange={field.onChange}
+                      value={field.value}
+                      disabled={!selectedCity}
+                    >
                       <FormControl>
                         <SelectTrigger className="pl-10">
                           <SelectValue placeholder="Select a college" />
