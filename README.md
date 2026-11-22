@@ -5,6 +5,7 @@
 **Student housing that shows verified PGs, hostels and shared flats on a map — no broker, no stale photos, no surprise brokerage fee.**
 
 [![Live Demo](https://img.shields.io/badge/live-demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://nivora-pi.vercel.app)
+[![CI](https://github.com/99Ayush/NIVORA/actions/workflows/ci.yml/badge.svg)](https://github.com/99Ayush/NIVORA/actions/workflows/ci.yml)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)](https://firebase.google.com)
@@ -19,6 +20,8 @@
 Students moving to a new city get their accommodation information from WhatsApp groups and unverified listing sites. The photos are years old, the rent in the post is not the rent on the phone call, and the security deposit has a way of not coming back.
 
 Nivora puts three things next to each other that are usually scattered: **verified listings**, **a map**, and **reviews written by people who actually lived there**.
+
+![The Nivora landing page](docs/screenshots/home.png)
 
 ## Features
 
